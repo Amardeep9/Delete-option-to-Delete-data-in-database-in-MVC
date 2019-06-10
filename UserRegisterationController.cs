@@ -62,22 +62,11 @@ namespace RegisterationForminMVC.Controllers
         [HttpGet]
         public ActionResult Delete(int? id)
         {
-            if (id == null)
-            {
-                return new HttpNotFoundResult("Not Found");
-            }
-            
+          
 
             clsUserReg clsUser3 = new clsUserReg();
             clsUser3.DeleteUser(id);
             List<clsUserReg> lst = clsUser3.GetUsers();
-           
-
-
-            if (clsUser3 == null)
-            {
-                return new HttpNotFoundResult("Not Found");
-            }
             return View("GetAllUser",lst);
         }
     }
