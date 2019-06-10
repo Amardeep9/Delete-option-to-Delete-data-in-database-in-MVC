@@ -1,1 +1,1 @@
-# Edit-option-to-update-data-in-database-in-MVC
+# Delete-option-to-Dalete-data-in-database-in-MVC
